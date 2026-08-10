@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pruebas de accesibilidad con usuarios: guía práctica · Inklusion</title>
+  <meta name="description" content="Cómo planear pruebas de accesibilidad con personas con discapacidad: objetivos, reclutamiento, ajustes, sesiones, hallazgos y métricas.">
+  <link rel="canonical" href="https://inklusion-blog.vercel.app/blog/pruebas-accesibilidad-con-usuarios-discapacidad-guia/">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"Article","headline":"Pruebas de accesibilidad con personas con discapacidad: cómo aprender sin convertir la sesión en examen","description":"Cómo planear pruebas de accesibilidad con personas con discapacidad: objetivos, reclutamiento, ajustes, sesiones, hallazgos y métricas.","author":{"@type":"Organization","name":"Inklusion"},"publisher":{"@type":"Organization","name":"Inklusion","logo":{"@type":"ImageObject","url":"https://inklusion-blog.vercel.app/assets/img/logo.png"}},"datePublished":"2026-08-10","dateModified":"2026-08-10","inLanguage":"es-MX","mainEntityOfPage":"https://inklusion-blog.vercel.app/blog/pruebas-accesibilidad-con-usuarios-discapacidad-guia/","keywords":["pruebas de accesibilidad con usuarios","pruebas con personas con discapacidad","usabilidad accesible","investigación de usuarios inclusiva","evaluación de accesibilidad"]},
+      {"@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"¿Qué son las pruebas de accesibilidad con usuarios?","acceptedAnswer":{"@type":"Answer","text":"Son sesiones en las que personas con discapacidad intentan completar tareas reales en un producto y explican las barreras, estrategias y consecuencias que encuentran."}},
+        {"@type":"Question","name":"¿Las pruebas con usuarios sustituyen una auditoría WCAG?","acceptedAnswer":{"@type":"Answer","text":"No. Las pruebas aportan evidencia de uso real; una evaluación técnica comprueba criterios y cobertura. W3C recomienda combinar ambas perspectivas."}},
+        {"@type":"Question","name":"¿Cuántas personas deben participar?","acceptedAnswer":{"@type":"Answer","text":"No existe un número universal. Debe definirse según tareas, tecnologías de asistencia, perfiles de uso y riesgos; una muestra pequeña no representa a todas las personas con discapacidad."}},
+        {"@type":"Question","name":"¿Se debe pagar a las personas participantes?","acceptedAnswer":{"@type":"Answer","text":"Inklusion recomienda compensar su tiempo y experiencia con criterios claros, sin presentar la participación como favor o voluntariado implícito."}},
+        {"@type":"Question","name":"¿Qué se debe medir en una prueba?","acceptedAnswer":{"@type":"Answer","text":"Finalización de tareas, puntos de bloqueo, apoyos solicitados, tiempo orientativo, severidad, estrategias utilizadas y consecuencia para la persona y el negocio."}}
+      ]},
+      {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://inklusion-blog.vercel.app/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://inklusion-blog.vercel.app/blog/"},{"@type":"ListItem","position":3,"name":"Pruebas de accesibilidad con usuarios","item":"https://inklusion-blog.vercel.app/blog/pruebas-accesibilidad-con-usuarios-discapacidad-guia/"}]}
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+<div class="top-bar"><div class="top-inner"><div class="flags" aria-label="Seleccionar idioma"><a href="/" aria-label="Español"><img src="/assets/img/spanish.png" alt="Español"></a><a href="/en/" aria-label="English"><img src="/assets/img/english.png" alt="English"></a></div><a class="access-tab" href="https://portal.inklusion.incluirt.com/" aria-label="Abrir modo accesible"><img src="/assets/img/Pestana-Modo-Accesible-2.png" alt="Modo Accesible"></a></div></div>
+<header class="header"><nav class="nav" aria-label="Navegación principal"><a class="logo" href="/" aria-label="Inklusion Blog"><img src="/assets/img/logo.png" alt="Inklusion"></a><ul class="menu"><li><a href="/blog/">Blog</a></li><li><a href="https://www.inklusion.com.mx/accesibilidad-web/">Accesibilidad web</a></li><li><a href="https://www.inklusion.com.mx/accesibilidad-y-diseno-universal/">Accesibilidad y diseño universal</a></li><li><a href="https://www.inklusion.com.mx/recursos-humanos/">Recursos humanos</a></li><li><a href="https://www.inklusion.com.mx/consultoria-en-inclusion/">Consultoría en inclusión</a></li></ul></nav></header>
+<main id="contenido">
+<section class="page-hero"><div class="container"><p class="eyebrow">Investigación de usuarios · Accesibilidad · Guía práctica</p><h1>Pruebas de accesibilidad con personas con discapacidad: cómo aprender sin convertir la sesión en examen</h1><p>La persona participante no tiene que demostrar que puede vencer el producto. El producto tiene que mostrar dónde le falla a la persona.</p></div></section>
+<div class="container article-wrap"><article class="article">
+<div class="meta"><span class="pill">13 min de lectura</span><span class="pill">Guía práctica</span><span class="pill">10 de agosto de 2026</span></div>
+<p><strong>Respuesta directa:</strong> una prueba de accesibilidad con usuarios observa cómo personas con discapacidad completan tareas reales con sus propias tecnologías y estrategias. Para hacerla bien, la empresa debe definir objetivos, reclutar perfiles pertinentes, preguntar por ajustes, compensar la participación, preparar materiales accesibles y registrar barreras sin evaluar a la persona. Estas sesiones complementan la revisión WCAG; no la sustituyen.</p>
+<p>Hay una diferencia enorme entre saber que un botón “tiene etiqueta” y descubrir que esa etiqueta no permite distinguir “guardar borrador” de “enviar solicitud”. La primera respuesta llega de una comprobación técnica. La segunda aparece cuando alguien intenta terminar el trabajo.</p>
+<blockquote>En una prueba de accesibilidad, un bloqueo no es un error de la persona participante. Es evidencia sobre el producto.</blockquote>
+
+<h2 id="sirven">¿Para qué sirven las pruebas de accesibilidad con usuarios?</h2>
+<p>W3C explica en su guía sobre <a href="https://www.w3.org/WAI/test-evaluate/involving-users/">participación de usuarios en la evaluación de accesibilidad</a> que involucrar a personas con discapacidad ayuda a comprender cómo usan la web, las tecnologías de asistencia y sus estrategias adaptativas. También puede descubrir problemas de accesibilidad y usabilidad con mayor eficacia.</p>
+<p>Una sesión bien diseñada puede mostrar, por ejemplo, que:</p>
+<ul>
+<li>el orden de foco permite avanzar, pero obliga a recorrer decenas de controles antes de llegar a la acción principal;</li>
+<li>el mensaje de error se anuncia, aunque no explica cómo corregir el dato;</li>
+<li>la videollamada tiene subtítulos, pero el enlace para solicitar un ajuste no funciona con teclado;</li>
+<li>un flujo es técnicamente operable y, aun así, impone una carga cognitiva innecesaria.</li>
+</ul>
+<p>La prueba conecta el hallazgo con una consecuencia: abandono, dependencia de otra persona, exposición de información, más tiempo o imposibilidad de completar la tarea.</p>
+
+<h2 id="no-sustituyen">¿Por qué no sustituyen una auditoría WCAG?</h2>
+<p>W3C es claro: la evaluación con usuarios no puede cubrir por sí sola todos los tipos de discapacidad, estrategias y tecnologías de asistencia. Tampoco determina automáticamente la conformidad con un estándar. Debe combinarse con evaluación basada en WCAG.</p>
+<p>El sentido inverso también importa. Una auditoría técnica puede identificar incumplimientos, pero no siempre explica cuál interrumpe primero el recorrido o cómo se acumulan varias fricciones menores. La guía de W3C sobre <a href="https://www.w3.org/WAI/test-evaluate/combined-expertise/">experiencia combinada en evaluación</a> recuerda que una revisión efectiva exige conocimientos de tecnología, herramientas, barreras, tecnologías de asistencia y pautas.</p>
+<p>Nuestra postura es sencilla: WCAG ofrece criterios; las personas aportan experiencia situada. Presentarlas como opciones rivales empobrece la decisión.</p>
+
+<h2 id="plan">¿Cómo preparar el plan de prueba?</h2>
+<h3>1. Elegir decisiones, no una demostración</h3>
+<p>El objetivo no debería ser “ver si el sitio es accesible”. Conviene formular una decisión concreta: saber si una persona puede solicitar una cotización, completar una vacante, recuperar su contraseña o encontrar soporte sin ayuda externa.</p>
+<p>Selecciona entre tres y cinco tareas críticas. Describe el resultado, no los clics. “Encuentra y compra el plan adecuado” permite observar estrategias; “haz clic en Precios y luego en Comprar” ensaya el guion del equipo.</p>
+<h3>2. Definir perfiles pertinentes</h3>
+<p>La discapacidad no es una sola variable. El plan debe considerar la tarea, el contexto de uso, la experiencia digital y las tecnologías o estrategias relevantes: lector de pantalla, ampliación, navegación por teclado, reconocimiento de voz, subtítulos, lectura fácil u otras.</p>
+<p>No existe un número universal de participantes que represente toda la discapacidad. Una ronda pequeña puede revelar bloqueos importantes, pero sus resultados deben reportarse con límites explícitos. “Tres personas no encontraron el control” es evidencia; “las personas con discapacidad no pueden usarlo” es una generalización que la muestra no sostiene.</p>
+<h3>3. Preguntar por ajustes antes de la sesión</h3>
+<p>La invitación debe estar en un formato accesible e indicar propósito, duración, modalidad, uso de datos y compensación. Incluye una pregunta abierta: “¿Qué necesitas para participar en igualdad de condiciones?”. No obligues a revelar un diagnóstico si basta conocer el ajuste.</p>
+<h3>4. Compensar tiempo y experiencia</h3>
+<p>Como práctica de Inklusion, recomendamos ofrecer una compensación clara y equivalente para participantes que cumplen el mismo rol. La experiencia vivida aporta valor profesional. Tratarla como voluntariado implícito traslada el costo de la investigación a quienes ya enfrentan la barrera.</p>
+
+<h2 id="sesion">¿Cómo conducir una sesión sin evaluar a la persona?</h2>
+<p>Antes de empezar, confirma consentimiento, grabación, pausas y forma preferida de comunicación. Permite que la persona use su equipo y configuración habituales cuando el objetivo sea observar una experiencia real. Si la prueba necesita un dispositivo controlado, explica por qué y revisa que la configuración sea compatible.</p>
+<p>Durante la tarea, pide que la persona comparta lo que intenta hacer, sin exigir una narración constante si interfiere con su tecnología o concentración. El moderador puede preguntar “¿qué esperabas encontrar?” o “¿qué información falta?”, pero debe evitar enseñar el camino demasiado pronto.</p>
+<p>Si aparece un bloqueo, registra:</p>
+<ul>
+<li>la tarea y el punto exacto;</li>
+<li>qué esperaba la persona;</li>
+<li>qué tecnología o estrategia estaba usando;</li>
+<li>si pudo recuperarse y con qué apoyo;</li>
+<li>la consecuencia: retraso, error, abandono, dependencia o riesgo;</li>
+<li>la evidencia disponible, cuidando datos personales.</li>
+</ul>
+<p>Detén una tarea cuando continuar provoque frustración innecesaria, exponga información o ya no genere aprendizaje. El objetivo es estudiar el producto, no medir resistencia.</p>
+
+<h2 id="hallazgos">¿Cómo convertir observaciones en cambios?</h2>
+<p>Un video de dos horas no es un backlog. Cada hallazgo necesita una descripción reproducible, evidencia, usuarios afectados, consecuencia, severidad propuesta y responsable. Vincúlalo con el criterio WCAG cuando exista relación, sin forzar un criterio para cada problema de usabilidad.</p>
+<p>Una priorización útil combina cuatro preguntas:</p>
+<ul>
+<li><strong>Impacto:</strong> ¿impide o dificulta una tarea esencial?</li>
+<li><strong>Alcance:</strong> ¿en cuántos recorridos, plantillas o canales aparece?</li>
+<li><strong>Frecuencia:</strong> ¿con qué regularidad se ejecuta la tarea?</li>
+<li><strong>Riesgo de repetición:</strong> ¿el componente o proceso volverá a introducir la barrera?</li>
+</ul>
+<p>Después de corregir, vuelve a probar el recorrido. Cerrar un ticket porque cambió el código demuestra actividad; comprobar que la persona puede completar la tarea demuestra avance.</p>
+
+<h2 id="metricas">¿Qué métricas ayudan sin reducir la experiencia a un promedio?</h2>
+<p>Registra finalización de tareas, bloqueos, apoyos solicitados, tiempo orientativo, severidad y recurrencia. Segmenta resultados por tarea y configuración cuando sea pertinente; un promedio general puede esconder que un grupo no terminó ninguna vez.</p>
+<p>También conviene medir el proceso interno: porcentaje de hallazgos críticos corregidos, tiempo hasta validación, reincidencia por componente y proporción de recorridos prioritarios probados nuevamente.</p>
+<p>El tiempo requiere contexto. Una persona experta con lector de pantalla puede completar una tarea más rápido que otra sin discapacidad; otra puede tardar más por falta de familiaridad con el producto. El dato útil no es quién “ganó”, sino dónde el diseño impuso pasos, dudas o dependencias evitables.</p>
+
+<h2 id="errores">Cinco errores que invalidan el aprendizaje</h2>
+<ol>
+<li><strong>Invitar a una persona y pedirle representar a todas.</strong> Documenta el perfil y limita la conclusión.</li>
+<li><strong>Probar solo la página principal.</strong> Prioriza procesos completos y estados de error.</li>
+<li><strong>Llegar con un prototipo inaccesible de la propia sesión.</strong> Revisa invitación, consentimiento, plataforma, materiales y canal de soporte.</li>
+<li><strong>Corregir al participante.</strong> Si el moderador explica el control, registra primero que el producto no lo explicó.</li>
+<li><strong>Guardar hallazgos sin responsable.</strong> Define fecha, dueño, criterio de aceptación y validación posterior.</li>
+</ol>
+<p>Para estructurar el alcance técnico y la muestra, consulta el análisis de <a href="/blog/wcag-em-2-evaluacion-accesibilidad-productos-digitales-2026/">WCAG-EM 2 para productos digitales</a>. Para ordenar correcciones por severidad y evidencia, revisa nuestra <a href="/blog/auditoria-accesibilidad-web-wcag-checklist-mexico/">guía de auditoría de accesibilidad web</a>.</p>
+
+<h2 id="faq">Preguntas frecuentes</h2>
+<h3>¿Qué son las pruebas de accesibilidad con usuarios?</h3><p>Sesiones donde personas con discapacidad intentan tareas reales y muestran barreras, estrategias y consecuencias en el producto.</p>
+<h3>¿Sustituyen una auditoría WCAG?</h3><p>No. La experiencia de uso y la evaluación técnica responden preguntas diferentes y deben combinarse.</p>
+<h3>¿Cuántas personas deben participar?</h3><p>Depende de tareas, perfiles, tecnologías y riesgos. Una muestra pequeña puede descubrir barreras, pero no representa a todas las personas.</p>
+<h3>¿Se debe pagar la participación?</h3><p>Inklusion recomienda compensar el tiempo y la experiencia con criterios claros y equivalentes.</p>
+<h3>¿Qué debe medirse?</h3><p>Finalización, bloqueos, apoyos, tiempo con contexto, severidad, recurrencia y consecuencias para la persona y el negocio.</p>
+
+<div class="cta-panel"><h2>Incluye experiencia real en tu evaluación de accesibilidad</h2><p>Inklusion acompaña a organizaciones que necesitan identificar barreras, escuchar a las personas y convertir evidencia en mejoras concretas.</p><a class="btn" href="https://www.inklusion.com.mx/consultoria-en-inclusion/">Conocer la consultoría en inclusión</a></div>
+</article><aside class="toc" aria-label="Índice del artículo"><h2>En esta guía</h2><a href="#sirven">Para qué sirven</a><a href="#no-sustituyen">Auditoría y usuarios</a><a href="#plan">Preparar el plan</a><a href="#sesion">Conducir la sesión</a><a href="#hallazgos">Convertir hallazgos</a><a href="#metricas">Métricas</a><a href="#errores">Errores frecuentes</a><a href="#faq">FAQ</a></aside></div>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><img class="logo-footer" src="/assets/img/logo.png" alt="Inklusion"><p>Soluciones de accesibilidad web, diseño universal, recursos humanos e inclusión para organizaciones en México.</p><div class="badges"><img src="/assets/img/wcag2AAA-blue.png" alt="WCAG 2 AAA"><img src="/assets/img/vcss-blue.gif" alt="CSS válido"></div></div><div><h2>Estamos en</h2><p>Av. de las Fuentes 41A interior 504, Lomas de Tecamachalco, Naucalpan de Juárez, Estado de México.</p></div><div><h2>Servicios</h2><p><a href="https://www.inklusion.com.mx/accesibilidad-web/">Accesibilidad web</a><br><a href="https://www.inklusion.com.mx/accesibilidad-y-diseno-universal/">Accesibilidad y diseño universal</a><br><a href="https://www.inklusion.com.mx/recursos-humanos/">Recursos humanos</a><br><a href="https://www.inklusion.com.mx/consultoria-en-inclusion/">Consultoría en inclusión</a></p></div></div><div class="container copyright">© Inklusion. Contenido educativo sobre accesibilidad e inclusión.</div></footer>
+</body></html>
