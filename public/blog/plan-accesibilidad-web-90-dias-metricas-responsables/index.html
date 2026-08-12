@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan de accesibilidad web: 90 días y métricas · Inklusion</title>
+  <meta name="description" content="Plan de accesibilidad web de 90 días: alcance, auditoría, correcciones, responsables y métricas para convertir hallazgos WCAG en mejora continua.">
+  <link rel="canonical" href="https://inklusion-blog.vercel.app/blog/plan-accesibilidad-web-90-dias-metricas-responsables/">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Article","headline":"Plan de accesibilidad web en 90 días: de la auditoría a correcciones que sí llegan a producción","description":"Plan de accesibilidad web de 90 días: alcance, auditoría, correcciones, responsables y métricas para convertir hallazgos WCAG en mejora continua.","author":{"@type":"Organization","name":"Inklusion"},"publisher":{"@type":"Organization","name":"Inklusion","logo":{"@type":"ImageObject","url":"https://inklusion-blog.vercel.app/assets/img/logo.png"}},"datePublished":"2026-08-12","dateModified":"2026-08-12","inLanguage":"es-MX","mainEntityOfPage":"https://inklusion-blog.vercel.app/blog/plan-accesibilidad-web-90-dias-metricas-responsables/","keywords":["plan de accesibilidad web","roadmap accesibilidad web","métricas de accesibilidad","plan WCAG 90 días","gestión de accesibilidad digital"]},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"¿Qué debe incluir un plan de accesibilidad web?","acceptedAnswer":{"@type":"Answer","text":"Alcance por recorridos críticos, línea base técnica y con usuarios, responsables, criterios de prioridad, correcciones con pruebas de aceptación, capacitación, reglas para proveedores y métricas de resultado y proceso."}},
+      {"@type":"Question","name":"¿Se puede hacer accesible un sitio en 90 días?","acceptedAnswer":{"@type":"Answer","text":"Depende de su tamaño y deuda. En 90 días sí puede establecerse una línea base, corregir barreras críticas, integrar controles al desarrollo y dejar una ruta priorizada; no debe prometerse conformidad total sin verificar el alcance."}},
+      {"@type":"Question","name":"¿Qué errores de accesibilidad deben corregirse primero?","acceptedAnswer":{"@type":"Answer","text":"Los que bloquean tareas esenciales, afectan a más recorridos, exponen información crítica o se repiten en componentes compartidos, considerando impacto en personas y esfuerzo de corrección."}},
+      {"@type":"Question","name":"¿Qué métricas de accesibilidad conviene usar?","acceptedAnswer":{"@type":"Answer","text":"Tareas esenciales completables, bloqueos abiertos y reincidentes, tiempo de corrección, cobertura de pruebas, componentes accesibles reutilizados, hallazgos con usuarios y cumplimiento de criterios de aceptación."}},
+      {"@type":"Question","name":"¿Una herramienta automática demuestra cumplimiento WCAG?","acceptedAnswer":{"@type":"Answer","text":"No. Detecta una parte de los problemas. Debe combinarse con revisión manual, pruebas de teclado y tecnologías de asistencia y, cuando corresponda, participación de personas con discapacidad."}}
+    ]},
+    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://inklusion-blog.vercel.app/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://inklusion-blog.vercel.app/blog/"},{"@type":"ListItem","position":3,"name":"Plan de accesibilidad web en 90 días","item":"https://inklusion-blog.vercel.app/blog/plan-accesibilidad-web-90-dias-metricas-responsables/"}]}
+  ]}
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+<div class="top-bar"><div class="top-inner"><div class="flags" aria-label="Seleccionar idioma"><a href="/" aria-label="Español"><img src="/assets/img/spanish.png" alt="Español"></a><a href="/en/" aria-label="English"><img src="/assets/img/english.png" alt="English"></a></div><a class="access-tab" href="https://portal.inklusion.incluirt.com/" aria-label="Abrir modo accesible"><img src="/assets/img/Pestana-Modo-Accesible-2.png" alt="Modo Accesible"></a></div></div>
+<header class="header"><nav class="nav" aria-label="Navegación principal"><a class="logo" href="/" aria-label="Inklusion Blog"><img src="/assets/img/logo.png" alt="Inklusion"></a><ul class="menu"><li><a href="/blog/">Blog</a></li><li><a href="https://www.inklusion.com.mx/accesibilidad-web/">Accesibilidad web</a></li><li><a href="https://www.inklusion.com.mx/accesibilidad-y-diseno-universal/">Accesibilidad y diseño universal</a></li><li><a href="https://www.inklusion.com.mx/recursos-humanos/">Recursos humanos</a></li><li><a href="https://www.inklusion.com.mx/consultoria-en-inclusion/">Consultoría en inclusión</a></li></ul></nav></header>
+<main id="contenido">
+<section class="page-hero"><div class="container"><p class="eyebrow">Accesibilidad digital · Operación · Guía práctica</p><h1>Plan de accesibilidad web en 90 días: de la auditoría a correcciones que sí llegan a producción</h1><p>Un reporte identifica barreras. Un plan asigna decisiones, fechas y evidencia para eliminarlas.</p></div></section>
+<div class="container article-wrap"><article class="article">
+<div class="meta"><span class="pill">13 min de lectura</span><span class="pill">Guía práctica</span><span class="pill">12 de agosto de 2026</span></div>
+<p><strong>Respuesta directa:</strong> un plan de accesibilidad web de 90 días debe delimitar recorridos críticos, crear una línea base técnica y con usuarios, priorizar barreras por impacto, asignar responsables, corregir componentes reutilizables y verificar cada cambio antes de producción. Su meta realista es reducir bloqueos y dejar controles permanentes; no prometer que un sitio complejo será “100% accesible” por calendario.</p>
+<p>La auditoría suele llegar como un archivo con hallazgos numerados. El problema empieza cuando nadie sabe cuáles bloquean una compra, quién modifica el componente compartido o qué evidencia permite cerrar el ticket. Tres meses después, el reporte sigue impecable. El producto, no tanto.</p>
+<blockquote>Una auditoría sin dueño ni criterio de cierre describe la deuda. No la reduce.</blockquote>
+
+<h2 id="antes">¿Qué debe decidirse antes de contar los 90 días?</h2>
+<p>Define el alcance por tareas y no únicamente por número de páginas. Registro, búsqueda, compra, pago, acceso a documentos, soporte y recuperación de cuenta suelen importar más que una muestra de URLs elegida al azar. W3C explica que las <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines</a> ofrecen criterios verificables para hacer el contenido perceptible, operable, comprensible y robusto.</p>
+<p>Elige una versión de referencia de WCAG y un nivel objetivo según obligaciones, riesgos y contexto. Documenta navegadores, dispositivos y tecnologías de asistencia que formarán parte de las pruebas. Si el producto depende de terceros —motor de pagos, chat, agenda o autenticación— inclúyelos en el mapa aunque no puedas corregir su código directamente.</p>
+<p><strong>Hecho:</strong> una prueba automática no evalúa todos los criterios ni demuestra que una tarea pueda completarse. <strong>Decisión operativa:</strong> combina automatización, revisión manual, teclado, tecnologías de asistencia y pruebas con personas cuando el riesgo y alcance lo requieran.</p>
+
+<h2 id="dias-1-15">Días 1 a 15: ¿cómo construir una línea base útil?</h2>
+<h3>Mapea recorridos, componentes y propietarios</h3>
+<p>Relaciona cada tarea crítica con sus plantillas y componentes: encabezado, menú, formulario, modal, tabla, reproductor o selector de fecha. Añade propietario de producto, diseño, desarrollo, contenido y proveedor. Cuando un mismo componente falla en 40 páginas, el plan debe mostrar una corrección de sistema, no 40 parches.</p>
+<h3>Registra barreras con evidencia reproducible</h3>
+<p>Cada hallazgo necesita ubicación, pasos, resultado observado, resultado esperado, personas potencialmente afectadas, criterio relacionado y evidencia. Una grabación corta, captura y fragmento de código pueden acelerar el diagnóstico, pero no sustituyen una explicación clara.</p>
+<h3>Establece el punto de partida</h3>
+<p>Mide cuántas tareas esenciales pueden completarse con teclado y tecnologías de asistencia seleccionadas; cuántos bloqueos críticos existen; qué porcentaje de componentes compartidos fue revisado; y cuánto tarda el equipo en asignar un hallazgo. Nuestra <a href="/blog/auditoria-accesibilidad-web-wcag-checklist-mexico/">guía de auditoría de accesibilidad web</a> detalla una estructura para evaluar y priorizar sin reducir la revisión a un escaneo.</p>
+
+<h2 id="dias-16-35">Días 16 a 35: ¿cómo priorizar sin convertir todo en “urgente”?</h2>
+<p>Usa al menos cuatro variables: severidad para la persona, frecuencia del recorrido, alcance del componente y dependencia técnica. Un botón sin nombre que impide pagar merece más atención que un encabezado fuera de orden en una página secundaria, aunque ambos deban corregirse.</p>
+<ul>
+<li><strong>Bloqueante:</strong> impide completar una tarea esencial sin alternativa equivalente.</li>
+<li><strong>Alta:</strong> exige esfuerzo desproporcionado, causa errores graves o afecta contenido crítico.</li>
+<li><strong>Media:</strong> dificulta comprensión u operación, pero existe una ruta utilizable.</li>
+<li><strong>Baja:</strong> tiene impacto acotado y no bloquea la tarea, sin dejar de ser deuda.</li>
+</ul>
+<p>Luego busca multiplicadores. Corregir el modal, formulario o sistema de encabezados compartido puede resolver decenas de instancias. La prioridad no debe decidirla únicamente el costo más bajo: “arreglamos 200 textos alternativos decorativos” suena productivo, pero no compensa un pago imposible con teclado.</p>
+
+<h2 id="dias-36-65">Días 36 a 65: ¿cómo llevar correcciones a producción?</h2>
+<h3>Convierte hallazgos en criterios de aceptación</h3>
+<p>Evita tickets como “hacer accesible el formulario”. Especifica comportamientos comprobables: cada campo tiene nombre programático; el error identifica el campo y explica cómo resolverlo; el foco se mueve de forma predecible; la sesión permite ampliar tiempo; y el envío funciona con teclado y lector de pantalla en las configuraciones acordadas.</p>
+<h3>Corrige en el sistema de diseño</h3>
+<p>Cuando la barrera vive en un componente reutilizable, modifica su fuente, documentación y pruebas. Marca la versión corregida y retira patrones obsoletos. Así el equipo deja de reintroducir el mismo problema cada vez que crea una pantalla.</p>
+<h3>Prueba en una rama y después en el recorrido completo</h3>
+<p>Una corrección local puede romper otro estado. Prueba vacío, error, carga, éxito, sesión expirada y contenido real. Después verifica la tarea completa. Si el campo ya tiene etiqueta pero el código de verificación expira antes de poder introducirlo, la barrera persiste con mejor HTML.</p>
+<p>Para organizar una muestra representativa y verificar procesos completos, consulta nuestro análisis de <a href="/blog/wcag-em-2-evaluacion-accesibilidad-productos-digitales-2026/">WCAG-EM 2 y evaluación de productos digitales</a>.</p>
+
+<h2 id="dias-66-80">Días 66 a 80: ¿cuándo incluir pruebas con personas con discapacidad?</h2>
+<p>La revisión con usuarios es especialmente valiosa en recorridos complejos, decisiones de alto impacto y experiencias donde el cumplimiento técnico no revela carga cognitiva, confianza o autonomía. No la uses para reemplazar controles técnicos básicos ni para pedir a una persona que encuentre todos los errores.</p>
+<p>Define tareas, ajustes, consentimiento, compensación, protección de datos y forma de registrar observaciones. Distingue la barrera observada de la preferencia individual y evita generalizar. La <a href="/blog/pruebas-accesibilidad-con-usuarios-discapacidad-guia/">guía de pruebas de accesibilidad con personas con discapacidad</a> propone un proceso para convertir sesiones en decisiones sin usar a participantes como certificación.</p>
+
+<h2 id="dias-81-90">Días 81 a 90: ¿cómo cerrar el ciclo sin declarar victoria antes de tiempo?</h2>
+<p>Repite las tareas y pruebas de la línea base. Un ticket solo cierra cuando existe evidencia del criterio acordado y la corrección está en el entorno que usarán las personas. Si permanece un bloqueo, documenta alternativa temporal, responsable, fecha y riesgo; no lo escondas dentro del porcentaje general.</p>
+<p>Publica una ruta siguiente: componentes pendientes, contenidos históricos, proveedores, capacitación y frecuencia de regresión. Un plan de 90 días debe terminar con accesibilidad integrada al trabajo semanal, no con una carpeta titulada “fase dos” que nadie vuelve a abrir.</p>
+
+<h2 id="metricas">¿Qué métricas muestran progreso real?</h2>
+<p>Evita una sola puntuación. Los porcentajes automáticos pueden servir como señal de regresión dentro del mismo alcance y herramienta, pero no representan la experiencia completa ni equivalen a conformidad.</p>
+<ul>
+<li><strong>Resultado:</strong> porcentaje de tareas esenciales completables en las configuraciones de prueba.</li>
+<li><strong>Riesgo:</strong> bloqueos críticos abiertos, antigüedad y reincidencia.</li>
+<li><strong>Velocidad:</strong> tiempo desde detección hasta asignación, corrección y verificación.</li>
+<li><strong>Cobertura:</strong> componentes, plantillas, estados y recorridos evaluados.</li>
+<li><strong>Prevención:</strong> criterios de aceptación incorporados y regresiones detenidas antes de producción.</li>
+<li><strong>Experiencia:</strong> barreras observadas con usuarios, apoyos necesarios y autonomía en tareas.</li>
+</ul>
+<p><strong>Hipótesis:</strong> corregir primero componentes compartidos y añadir pruebas de regresión reducirá la reincidencia durante el siguiente trimestre. Compruébalo comparando nuevos hallazgos por componente y la proporción detenida antes del lanzamiento.</p>
+
+<h2 id="errores">Cinco errores que hacen fracasar un roadmap</h2>
+<ol>
+<li><strong>Medir páginas y olvidar tareas.</strong> Una portada correcta no compensa un pago bloqueado.</li>
+<li><strong>Asignar todo a desarrollo.</strong> Diseño, contenido, compras y producto también crean o previenen barreras.</li>
+<li><strong>Corregir instancias y no componentes.</strong> El mismo error vuelve con otro nombre.</li>
+<li><strong>Cerrar por cambio de código.</strong> Sin retest no hay evidencia de resolución.</li>
+<li><strong>Prometer “100% accesible”.</strong> El contenido, las dependencias y el producto cambian; la gestión debe continuar.</li>
+</ol>
+
+<h2 id="faq">Preguntas frecuentes</h2>
+<h3>¿Qué incluye un plan de accesibilidad web?</h3><p>Alcance, línea base, prioridades, responsables, correcciones, pruebas, capacitación, proveedores y métricas.</p>
+<h3>¿Se puede hacer accesible un sitio en 90 días?</h3><p>Puede reducir barreras críticas e instalar controles; la conformidad total depende del alcance y debe verificarse.</p>
+<h3>¿Qué se corrige primero?</h3><p>Bloqueos de tareas esenciales, componentes compartidos y problemas de alto impacto o riesgo.</p>
+<h3>¿Qué métricas convienen?</h3><p>Tareas completables, bloqueos, reincidencia, tiempo de corrección, cobertura y evidencia con usuarios.</p>
+<h3>¿Una herramienta automática demuestra cumplimiento?</h3><p>No. Debe combinarse con revisión manual y pruebas de interacción y tecnologías de asistencia.</p>
+
+<div class="cta-panel"><h2>Convierte hallazgos de accesibilidad en un plan verificable</h2><p>Inklusion ayuda a organizaciones a evaluar barreras digitales, priorizar correcciones y construir una práctica de mejora continua.</p><a class="btn" href="https://www.inklusion.com.mx/accesibilidad-web/">Conocer las soluciones de accesibilidad web</a></div>
+</article><aside class="toc" aria-label="Índice del artículo"><h2>En esta guía</h2><a href="#antes">Antes de empezar</a><a href="#dias-1-15">Días 1–15</a><a href="#dias-16-35">Días 16–35</a><a href="#dias-36-65">Días 36–65</a><a href="#dias-66-80">Días 66–80</a><a href="#dias-81-90">Días 81–90</a><a href="#metricas">Métricas</a><a href="#errores">Errores</a><a href="#faq">FAQ</a></aside></div>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><img class="logo-footer" src="/assets/img/logo.png" alt="Inklusion"><p>Soluciones de accesibilidad web, diseño universal, recursos humanos e inclusión para organizaciones en México.</p><div class="badges"><img src="/assets/img/wcag2AAA-blue.png" alt="WCAG 2 AAA"><img src="/assets/img/vcss-blue.gif" alt="CSS válido"></div></div><div><h2>Estamos en</h2><p>Av. de las Fuentes 41A interior 504, Lomas de Tecamachalco, Naucalpan de Juárez, Estado de México.</p></div><div><h2>Servicios</h2><p><a href="https://www.inklusion.com.mx/accesibilidad-web/">Accesibilidad web</a><br><a href="https://www.inklusion.com.mx/accesibilidad-y-diseno-universal/">Accesibilidad y diseño universal</a><br><a href="https://www.inklusion.com.mx/recursos-humanos/">Recursos humanos</a><br><a href="https://www.inklusion.com.mx/consultoria-en-inclusion/">Consultoría en inclusión</a></p></div></div><div class="container copyright">© Inklusion. Contenido educativo sobre accesibilidad e inclusión.</div></footer>
+</body></html>
