@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formularios accesibles: checklist WCAG · Inklusion</title>
+  <meta name="description" content="Checklist para crear formularios accesibles: etiquetas, teclado, instrucciones, errores, foco, autocompletado, confirmación y pruebas con WCAG 2.2.">
+  <link rel="canonical" href="https://inklusion-blog.vercel.app/blog/formularios-accesibles-checklist-wcag/">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Article","headline":"Formularios accesibles: checklist para que registrarse, comprar o pedir ayuda no sea una prueba","description":"Checklist para crear formularios accesibles: etiquetas, teclado, instrucciones, errores, foco, autocompletado, confirmación y pruebas con WCAG 2.2.","author":{"@type":"Organization","name":"Inklusion"},"publisher":{"@type":"Organization","name":"Inklusion","logo":{"@type":"ImageObject","url":"https://inklusion-blog.vercel.app/assets/img/logo.png"}},"datePublished":"2026-08-15","dateModified":"2026-08-15","inLanguage":"es-MX","mainEntityOfPage":"https://inklusion-blog.vercel.app/blog/formularios-accesibles-checklist-wcag/","keywords":["formularios accesibles","formulario accesible WCAG","accesibilidad de formularios web","checklist WCAG formularios"]},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"¿Qué es un formulario accesible?","acceptedAnswer":{"@type":"Answer","text":"Es un formulario que permite identificar campos, entender instrucciones, operar controles, detectar y corregir errores, revisar datos y completar la tarea con teclado y tecnologías de asistencia."}},
+      {"@type":"Question","name":"¿El placeholder sustituye a la etiqueta del campo?","acceptedAnswer":{"@type":"Answer","text":"No. Puede mostrar un ejemplo, pero desaparece al escribir y no ofrece siempre un nombre programático confiable. Cada control necesita una etiqueta persistente y correctamente asociada."}},
+      {"@type":"Question","name":"¿Cómo deben comunicarse los errores?","acceptedAnswer":{"@type":"Answer","text":"Deben identificar el campo, explicar el problema en texto, proponer una corrección cuando sea posible y permitir llegar al control. El color o un mensaje genérico no son suficientes."}},
+      {"@type":"Question","name":"¿Qué se debe probar con teclado?","acceptedAnswer":{"@type":"Answer","text":"Orden de foco, controles, selectores, ayuda, envío, validación, mensajes y recuperación. El foco debe ser visible y no quedar atrapado en componentes."}},
+      {"@type":"Question","name":"¿Pasar este checklist demuestra conformidad WCAG 2.2?","acceptedAnswer":{"@type":"Answer","text":"No. El checklist cubre riesgos frecuentes de formularios, pero la conformidad exige evaluar la página o producto completo contra todos los criterios aplicables y con pruebas automáticas y humanas."}}
+    ]},
+    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://inklusion-blog.vercel.app/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://inklusion-blog.vercel.app/blog/"},{"@type":"ListItem","position":3,"name":"Formularios accesibles","item":"https://inklusion-blog.vercel.app/blog/formularios-accesibles-checklist-wcag/"}]}
+  ]}
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+<div class="top-bar"><div class="top-inner"><div class="flags" aria-label="Seleccionar idioma"><a href="/" aria-label="Español"><img src="/assets/img/spanish.png" alt="Español"></a><a href="/en/" aria-label="English"><img src="/assets/img/english.png" alt="English"></a></div><a class="access-tab" href="https://portal.inklusion.incluirt.com/" aria-label="Abrir modo accesible"><img src="/assets/img/Pestana-Modo-Accesible-2.png" alt="Modo Accesible"></a></div></div>
+<header class="header"><nav class="nav" aria-label="Navegación principal"><a class="logo" href="/" aria-label="Inklusion Blog"><img src="/assets/img/logo.png" alt="Inklusion"></a><ul class="menu"><li><a href="/blog/">Blog</a></li><li><a href="https://www.inklusion.com.mx/accesibilidad-web/">Accesibilidad web</a></li><li><a href="https://www.inklusion.com.mx/accesibilidad-y-diseno-universal/">Accesibilidad y diseño universal</a></li><li><a href="https://www.inklusion.com.mx/recursos-humanos/">Recursos humanos</a></li><li><a href="https://www.inklusion.com.mx/consultoria-en-inclusion/">Consultoría en inclusión</a></li></ul></nav></header>
+<main id="contenido">
+<section class="page-hero"><div class="container"><p class="eyebrow">Accesibilidad web · Formularios · Guía práctica</p><h1>Formularios accesibles: checklist para que registrarse, comprar o pedir ayuda no sea una prueba</h1><p>El formulario suele ser el lugar donde una visita se convierte en acción. También donde una barrera se convierte en abandono.</p></div></section>
+<div class="container article-wrap"><article class="article">
+<div class="meta"><span class="pill">13 min de lectura</span><span class="pill">Guía práctica</span><span class="pill">15 de agosto de 2026</span></div>
+<p><strong>Respuesta directa:</strong> un formulario accesible tiene etiquetas asociadas a cada control, instrucciones claras, orden lógico, operación completa con teclado, foco visible y errores que se identifican en texto y pueden corregirse. También conserva datos, evita pedir la misma información dos veces y confirma el resultado. Debe probarse con tecnologías de asistencia y dentro de la tarea completa, no como componente aislado.</p>
+<p>Un formulario puede verse limpio, moderno y perfectamente centrado. Si una persona no sabe qué campo está activo, el lector de pantalla no anuncia la etiqueta o el error dice únicamente “algo salió mal”, el diseño ya perdió su propósito. La estética no envía la solicitud.</p>
+<blockquote>“Completa los campos obligatorios” sirve poco cuando el formulario no explica cuáles fallaron ni cómo encontrarlos.</blockquote>
+
+<h2 id="definicion">¿Qué hace accesible a un formulario?</h2>
+<p>La <a href="https://www.w3.org/WAI/tutorials/forms/">guía de formularios de W3C Web Accessibility Initiative</a> organiza el problema alrededor de controles identificables, agrupación, instrucciones, validación, notificaciones y formularios de varias páginas. WCAG 2.2 añade criterios verificables sobre teclado, foco, etiquetas, errores, propósito de campos y entradas redundantes, entre otros.</p>
+<p>La accesibilidad no significa crear una versión separada. Significa que el mismo recorrido permita percibir, entender y operar cada paso con distintas formas de navegación, lectura y comunicación. Un buen punto de partida es preguntar: ¿la persona sabe qué se pide, puede responder, entiende qué ocurrió y puede recuperarse si se equivoca?</p>
+<p>Este checklist cubre barreras frecuentes. No sustituye una evaluación completa de conformidad WCAG ni pruebas con personas con discapacidad.</p>
+
+<h2 id="etiquetas">¿Cada campo tiene un nombre que se ve y se anuncia?</h2>
+<p>Usa una etiqueta persistente, cercana y programáticamente asociada con su control. “Correo electrónico” debe aparecer como texto y ser el nombre que anuncia la tecnología de asistencia. El <em>placeholder</em> puede ofrecer un ejemplo, como nombre@empresa.com, pero no sustituye la etiqueta: desaparece al escribir, puede tener bajo contraste y obliga a recordar la instrucción.</p>
+<p>Para grupos de opciones relacionadas, usa una pregunta común y agrupa los controles de forma semántica. Por ejemplo, “Método de contacto preferido” debe dar contexto a “correo”, “teléfono” y “WhatsApp”. Sin el grupo, una opción anunciada fuera de contexto puede perder sentido.</p>
+<p>El criterio <a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html">3.3.2 Etiquetas o instrucciones</a> exige que existan cuando el contenido requiere entrada del usuario. El criterio <a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html">4.1.2 Nombre, función, valor</a> cubre la información programática de componentes. Una etiqueta visible sin asociación correcta resuelve solo la mitad.</p>
+
+<h2 id="instrucciones">¿Las instrucciones llegan antes de que la persona falle?</h2>
+<p>Explica formato, obligatoriedad y restricciones antes o junto al control. Si una contraseña necesita longitud y caracteres específicos, no reveles las reglas después del envío. Si un archivo tiene límite de tamaño o formato, dilo antes de abrir el selector.</p>
+<p>No marques obligatoriedad únicamente con color o un asterisco sin explicación. Escribe “obligatorio” o explica al inicio qué significa el símbolo. Mantén el texto breve, pero no sacrifiques la información necesaria por conservar una interfaz minimalista. La persona no debería tener que perder una ronda para descubrir las reglas.</p>
+<p>Cuando el campo solicita información personal común —nombre, correo, teléfono, dirección— utiliza atributos de autocompletado apropiados. El criterio WCAG 2.2 <a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html">1.3.5 Identificar el propósito de la entrada</a> permite que agentes de usuario y tecnologías de asistencia reconozcan el propósito de ciertos campos.</p>
+
+<h2 id="teclado">¿Se puede completar todo con teclado y foco visible?</h2>
+<p>Recorre el formulario con Tab y Shift+Tab. Activa botones, casillas, opciones, desplegables, ayuda y envío sin mouse. El orden debe seguir la secuencia visual y lógica. El foco debe verse con suficiente claridad y no quedar atrapado en un calendario, modal o selector personalizado.</p>
+<p>Prueba también Enter, barra espaciadora, Escape y flechas donde corresponda. Un componente visual puede imitar un control nativo sin heredar su comportamiento. Si el equipo construye selectores personalizados, debe implementar nombre, función, estado, interacción y gestión de foco. Cuando un control nativo resuelve la tarea, suele ofrecer una base más robusta.</p>
+<p>No uses cambios inesperados al recibir foco. Entrar a un campo no debería enviar el formulario, abrir otra ventana o mover a la persona sin advertencia. Y si existe un límite de tiempo, permite extenderlo cuando el criterio aplicable lo requiere.</p>
+
+<h2 id="errores">¿El error explica qué ocurrió y cómo corregirlo?</h2>
+<p>El criterio <a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html">3.3.1 Identificación de errores</a> pide identificar en texto el elemento con error y describirlo. “Error 422” no orienta. “Ingresa un correo con formato nombre@dominio.com” sí.</p>
+<p>Después del envío, presenta un resumen claro y vincula cada mensaje con el campo correspondiente. Mueve el foco al resumen o notifícalo de forma que las tecnologías de asistencia perciban el cambio; después permite llegar al primer error. Conserva los datos válidos. Borrar todo el formulario castiga el error y multiplica el trabajo.</p>
+<p>No dependas solo de un borde rojo. Añade texto, asociación programática y, cuando sea útil, un icono con alternativa. Si conoces una corrección probable, sugiérela sin cambiar el dato automáticamente. En operaciones legales, financieras o de alto impacto, ofrece revisión, confirmación y posibilidad de corregir antes de finalizar.</p>
+
+<h2 id="redundancia">¿El formulario pide solo lo necesario?</h2>
+<p>Solicitar la misma información varias veces aumenta carga de memoria y tiempo. WCAG 2.2 incorporó el criterio <a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html">3.3.7 Entrada redundante</a>: dentro de un mismo proceso, la información ingresada previamente debe autocompletarse o estar disponible para selección, salvo excepciones definidas.</p>
+<p>También conviene cuestionar cada campo. ¿Se necesita fecha de nacimiento completa o basta un rango? ¿La empresa requiere dos teléfonos? ¿El segundo apellido es obligatorio para completar esta tarea? Reducir entradas mejora accesibilidad, privacidad y conversión. No todo campo que cabe en la base de datos merece estar frente al usuario.</p>
+
+<h2 id="confirmacion">¿La persona sabe que terminó y qué sigue?</h2>
+<p>Al enviar, comunica éxito con un encabezado o mensaje claro, no únicamente con un cambio de color. Indica qué se recibió, número de referencia si existe, siguiente paso y tiempo de respuesta. Si llega una confirmación por correo, no la uses como única evidencia cuando el correo podría estar mal escrito; muestra también el resultado en pantalla.</p>
+<p>Cuando ocurre un error del servidor, distingue el problema técnico de un error de la persona. Conserva la información cuando sea seguro, ofrece reintento y un canal alternativo equivalente. “Vuelve a intentarlo más tarde” sin guardar datos ni contacto transforma una falla del negocio en trabajo para el usuario.</p>
+
+<h2 id="pruebas">¿Cómo probar un formulario accesible antes de publicarlo?</h2>
+<p>Empieza por la tarea completa: entrar, comprender, llenar, equivocarse, corregir, revisar, enviar y recibir confirmación. Hazlo en escritorio y móvil, con zoom y reflujo, teclado y al menos las combinaciones de lector de pantalla y navegador acordadas por el proyecto.</p>
+<p>La prueba automática puede detectar campos sin etiqueta, identificadores duplicados y algunos problemas semánticos. No sabe si “Dato 1” es una etiqueta útil, si las instrucciones llegan a tiempo o si el mensaje permite recuperarse. Combínala con revisión manual y pruebas con personas con discapacidad en flujos críticos.</p>
+<p>Usa datos de prueba que provoquen cada estado: vacío, formato incorrecto, límite excedido, opción no seleccionada, sesión vencida, error del servidor y envío exitoso. Documenta resultado esperado, evidencia, severidad, responsable y corrección. La <a href="/blog/auditoria-accesibilidad-web-wcag-checklist-mexico/">guía de auditoría de accesibilidad web</a> ayuda a integrar estos hallazgos en una evaluación más amplia.</p>
+
+<h2 id="checklist">Checklist breve antes de liberar</h2>
+<ul>
+<li>Cada control tiene etiqueta visible y nombre programático correcto.</li>
+<li>Los grupos de opciones tienen pregunta o leyenda común.</li>
+<li>Obligatoriedad, formato y restricciones se explican antes del error.</li>
+<li>El autocompletado identifica campos personales compatibles.</li>
+<li>Todo se opera con teclado, en orden lógico y con foco visible.</li>
+<li>Los errores se identifican en texto, se asocian al campo y sugieren solución cuando es posible.</li>
+<li>Los datos correctos se conservan después de un error.</li>
+<li>No se pide de nuevo información ya capturada sin necesidad.</li>
+<li>El envío muestra confirmación y siguiente paso.</li>
+<li>La tarea se probó con móvil, zoom, teclado y tecnologías de asistencia.</li>
+</ul>
+<p><strong>Hipótesis a comprobar:</strong> corregir etiquetas, navegación y recuperación de errores reducirá abandonos que hoy aparecen en analítica como “falta de interés”. Valídala comparando finalización, errores por campo, reintentos, solicitudes de soporte y experiencia antes y después, sin atribuir cualquier cambio a una sola corrección.</p>
+
+<h2 id="faq">Preguntas frecuentes</h2>
+<h3>¿Qué es un formulario accesible?</h3><p>Uno que permite entender campos, operar controles, corregir errores y completar la tarea con distintas formas de navegación y tecnologías de asistencia.</p>
+<h3>¿El placeholder sustituye a la etiqueta?</h3><p>No. Puede servir como ejemplo, pero desaparece al escribir y no garantiza un nombre programático confiable.</p>
+<h3>¿Cómo se comunican los errores?</h3><p>Identifica el campo, describe el problema en texto, propone una corrección y permite llegar al control.</p>
+<h3>¿Qué se prueba con teclado?</h3><p>Orden, foco, controles, ayuda, envío, validación, mensajes y recuperación, sin trampas de foco.</p>
+<h3>¿Este checklist demuestra conformidad WCAG 2.2?</h3><p>No. Cubre riesgos frecuentes; la conformidad requiere revisar todos los criterios aplicables y el producto completo.</p>
+
+<div class="cta-panel"><h2>Convierte el formulario en una puerta, no en un filtro técnico</h2><p>Inklusion evalúa accesibilidad web y acompaña a equipos a priorizar, corregir y verificar barreras en tareas digitales críticas.</p><a class="btn" href="https://www.inklusion.com.mx/accesibilidad-web/">Conocer soluciones de accesibilidad web</a></div>
+</article><aside class="toc" aria-label="Índice del artículo"><h2>En esta guía</h2><a href="#definicion">Qué es accesible</a><a href="#etiquetas">Etiquetas</a><a href="#instrucciones">Instrucciones</a><a href="#teclado">Teclado y foco</a><a href="#errores">Errores</a><a href="#redundancia">Redundancia</a><a href="#confirmacion">Confirmación</a><a href="#pruebas">Pruebas</a><a href="#checklist">Checklist</a><a href="#faq">FAQ</a></aside></div>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><img class="logo-footer" src="/assets/img/logo.png" alt="Inklusion"><p>Soluciones de accesibilidad web, diseño universal, recursos humanos e inclusión para organizaciones en México.</p><div class="badges"><img src="/assets/img/wcag2AAA-blue.png" alt="WCAG 2 AAA"><img src="/assets/img/vcss-blue.gif" alt="CSS válido"></div></div><div><h2>Estamos en</h2><p>Av. de las Fuentes 41A interior 504, Lomas de Tecamachalco, Naucalpan de Juárez, Estado de México.</p></div><div><h2>Servicios</h2><p><a href="https://www.inklusion.com.mx/accesibilidad-web/">Accesibilidad web</a><br><a href="https://www.inklusion.com.mx/accesibilidad-y-diseno-universal/">Accesibilidad y diseño universal</a><br><a href="https://www.inklusion.com.mx/recursos-humanos/">Recursos humanos</a><br><a href="https://www.inklusion.com.mx/consultoria-en-inclusion/">Consultoría en inclusión</a></p></div></div><div class="container copyright">© Inklusion. Contenido educativo sobre accesibilidad e inclusión.</div></footer>
+</body></html>
